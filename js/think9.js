@@ -12,17 +12,26 @@ $(function() {
 	});
 
 	function sizeHandler() {
-		if ($(window).width()  > 899 ) {
+		if ($(window).width()  > 768 ) {
 			$('#navbarMenu').removeClass('hide');
 
-			$('.page-wrapper').removeClass('hide')
-			$('.mobile-message').addClass('hide');
+			// showMobileScreen(false);
 		}
 		else {
 			$('#navbarMenu').addClass('hide');
 
+			// showMobileScreen(true);
+		}
+	}
+
+	function showMobileScreen(show) {
+		if(show) {
 			$('.page-wrapper').addClass('hide')
 			$('.mobile-message').removeClass('hide');
+		}
+		else {
+			$('.page-wrapper').removeClass('hide')
+			$('.mobile-message').addClass('hide');
 		}
 	}
 

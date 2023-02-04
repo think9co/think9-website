@@ -75,7 +75,7 @@
 							<br><br>
 							We partner with passionate entrepreneurs to combine our collective learning and experience with data science, digital ethnography, and technology platforms to build brands that connect to the new generation of Indian consumers.
 							<br><br>
-							We are a team of experienced entrepreneurs, marquee investors, and industry professionals who have expertise and experience in building some of the most popular brands in the country.</p>
+							<span class="yellow-bg">We are a team of experienced entrepreneurs and industry professionals who have expertise and experience in building some of the most popular brands in the country.</span></p>
 							<br><br>
 						</div>
 					</div>
@@ -153,11 +153,11 @@
 					</div>
 				</div>
 
-				<div class="content">
+				<div class="content flex">
 					<div class="col col-1">
 						<img class="side-img" src="/img/playbook_brand_development.png">
 					</div>
-					<div class="col col-1">
+					<div class="col col-2">
 						<div class="side-text">
 							<ul>
 								<li>
@@ -174,7 +174,10 @@
 					</div>
 				</div>
 
-				<div class="content">
+				<div class="content flex">
+					<div class="col col-2">
+						<img class="side-img" src="/img/playbook_tech_and_operations.png">
+					</div>
 					<div class="col col-1">
 						<div class="side-text">
 							<ul>
@@ -187,16 +190,13 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col col-1">
-						<img class="side-img" src="/img/playbook_tech_and_operations.png">
-					</div>
 				</div>
 
-				<div class="content">
+				<div class="content flex">
 					<div class="col col-1">
 						<img class="side-img" src="/img/playbook_channel_strategy.png">
 					</div>
-					<div class="col col-1">
+					<div class="col col-2">
 						<div class="side-text">
 							<ul>
 								<li>
@@ -213,7 +213,10 @@
 					</div>
 				</div>
 
-				<div class="content">
+				<div class="content flex">
+					<div class="col col-2">
+						<img class="side-img" src="/img/playbook_growth_and_community.png">
+					</div>
 					<div class="col col-1">
 						<div class="side-text">
 							<ul>
@@ -229,9 +232,6 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col col-1">
-						<img class="side-img" src="/img/playbook_growth_and_community.png">
-					</div>
 				</div>
 			</section>
 
@@ -244,11 +244,6 @@
 							<div>
 								<a target="_blank" href="https://www.sorrentina.in/">
 									<img class="portfolio-img" src="/img/portfolio_sorrentina.jpg">
-								</a>
-							</div>
-							<div>
-								<a target="_blank" href="https://www.amarchitrakatha.com/">
-									<img class="portfolio-img" src="/img/portfolio_ack.png">
 								</a>
 							</div>
 							<div>
@@ -267,11 +262,6 @@
 								</a>
 							</div>
 							<div>
-								<a target="_blank" href="https://beautybybie.com/">
-									<img class="portfolio-img" src="/img/portfolio_bie.png">
-								</a>
-							</div>							
-							<div>
 								<a target="_blank" href="https://thegoodbug.com/">
 									<img class="portfolio-img" src="/img/portfolio_tgb.jpg">
 								</a>
@@ -279,6 +269,21 @@
 							<div>
 								<a target="_blank" href="https://www.betruekind.com/">
 									<img class="portfolio-img" src="/img/portfolio_truekind.jpg">
+								</a>
+							</div>
+							<div>
+								<a target="_blank" href="https://pattrn.hair/">
+									<img class="portfolio-img" src="/img/portfolio_pattrn.jpg">
+								</a>
+							</div>
+							<div>
+								<a target="_blank" href="https://beautybybie.com/">
+									<img class="portfolio-img" src="/img/portfolio_bie.jpg">
+								</a>
+							</div>
+							<div>
+								<a target="_blank" href="https://www.amarchitrakatha.com/">
+									<img class="portfolio-img" src="/img/portfolio_ack.jpg">
 								</a>
 							</div>
 						</div>
@@ -344,6 +349,7 @@
 			$(document).ready(function(){
 				$(".values-carousel").owlCarousel({
 					items: 5,
+					center: true,
 					nav: true,
 					lazyLoad: true,
 					lazyLoadEager: 2,
@@ -351,7 +357,15 @@
 					dots: false,
 					autoplay: true,
 					autoplayTimeout: 2000,
-					autoplayHoverPause: false
+					autoplayHoverPause: false,
+					responsive:{
+						0: {
+							items: 1
+						},
+						769: {
+							items: 5
+						}
+					}
 				});
 
 				$(".portfolio-carousel").owlCarousel({
