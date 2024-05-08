@@ -664,3 +664,45 @@ section>.content {
 		margin-top: 0;
 	}
 }
+
+/* Co-Founder Page CSS Start */
+#co-founder .col {
+	width: 100%;
+}
+
+#co-founder .side-text {
+	border: 1px solid #000000;
+	padding: 25px;
+	text-align: left;
+	background-color: #ffffff;
+	-webkit-box-shadow: 15px 15px 0px -5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 15px 15px 0px -5px rgba(0, 0, 0, 0.75);
+	box-shadow: 15px 15px 0px -5px rgba(0, 0, 0, 0.75);
+}
+
+#co-founder-img img.landing-banner {
+	width: 90%;
+	max-width: 700px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+#co-founder-img .content {
+	min-height: 400px;
+	text-align: center;
+}
+#form-container .content{
+	text-align: center;
+}
+#form-container .content img{
+	width: 25%;
+	margin: 0 auto;
+}
+#bottom-banner .content img{
+	width: 100%;
+}
+#form-container .content p{
+	margin: 0 auto;
+	max-width: 800px;
+}
